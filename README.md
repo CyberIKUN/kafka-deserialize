@@ -159,8 +159,12 @@ Content-Type: application/json
 }
 ```
 
+
 <video src="./屏幕录制2023-08-04 22.08.06.mov"></video>
 
-漏洞利用方式和效果由于不同的数据库而不同，该项目集结了大部分的JDBC攻击https://github.com/su18/JDBC-Attack，MySQL的利用需要用到MySQL Fake Server（https://github.com/fnmsd/MySQL_Fake_Server），H2的利用仅仅需要一个sql语句或者不用都行。
+
+
+漏洞利用方式和效果由于不同的数据库而不同，该项目集结了大部分的JDBC攻击https://github.com/su18/JDBC-Attack
+MySQL的利用需要用到MySQL Fake Server，H2的利用仅仅需要一个sql语句或者不用都行。
 ## 修复
 在JdbcSourceConnector类上，过滤掉恶意数据库连接URL。
